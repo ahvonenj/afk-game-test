@@ -45,6 +45,9 @@
 		
 		<script src="script/overview/internet.js"></script>
 		
+		<script src="script/game/software.js"></script>
+		<script src="script/game/hardware.js"></script>
+		
 		<script src="script/game.js"></script>
 		
 		<script src="script/events.js"></script>
@@ -112,6 +115,13 @@
 				
 				<div class = "window" data-title = "Help"  id = "window_help">
 					<div class = "window_content">
+						<h2>What do?</h2><br/>
+						<p>The idea of the game is similar to one Cookie Clicker and / or various idle games,
+						but instead of i.e. manufacturing cookies, the <u>goal</u> is to build a <u>large network</u> of infected computers.<br/><br/>
+						
+						You can upgrade your network, software and hardware as well as obtain various other things with <u>money</u> and <u>bits</u>, 
+						you gain money and bits by <u>DDoSing</u> and <u>sending malware</u> to the internet.</p></br>
+					
 						<h2>New game</h2><br/>
 						<p>To start a new game, find the settings window and
 						press the new game button.</p></br>

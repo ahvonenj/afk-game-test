@@ -21,7 +21,7 @@ var virtualwindow =
 	},
 	shortcutPaddingIncrement: 
 	{
-		x: 80,
+		x: 95,
 		y: 0
 	},
 	
@@ -57,6 +57,7 @@ var virtualwindow =
 				grid: [ 5, 5 ],
 				scroll: false,
 				stack: ".window",
+				delay: 100,
 				drag: function(event, ui) 
 				{
 					if(game.isDebug)
@@ -75,12 +76,13 @@ var virtualwindow =
 				minHeight: 350
 			});
 			
-			var shortcutText = $(this).data('title').substr(0, 2).capitaliseFirstLetter();
+			//var shortcutText = $(this).data('title').substr(0, 2).capitaliseFirstLetter();
+			var shortcutText = $(this).data('title').capitaliseFirstLetter();
 			var shortcutColor = tinycolor.random().toHexString();
 			
 			if(that.shortcutCount % 6 == 0 && that.shortcutCount != 0)
 			{
-				that.shortcutPadding.y += 90;
+				that.shortcutPadding.y += 100;
 				that.shortcutPadding.x = 100;		
 			}
 			
