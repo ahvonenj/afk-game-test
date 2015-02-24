@@ -8,9 +8,9 @@ $(document).ready(function()
 	}
 	
 	virtualwindow.initWindows();
-	
+
+	game.init();
 	internet.init();
 	
-	game.init();
 	requestAnimFrame(game.animate);
 });
