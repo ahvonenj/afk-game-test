@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+*, html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: 'Inconsolata', Tahoma, Arial;
+	width: 100%;
+	height: 100%;
+	background-color: #2A2C2B;
+	overflow: hidden;
+}
+
+#wrapper
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../res/office.png');
+	-webkit-box-shadow: inset 0px 0px 113px 7px rgba(42,44,43,1);
+	-moz-box-shadow: inset 0px 0px 113px 7px rgba(42,44,43,1);
+	box-shadow: inset 0px 0px 113px 7px rgba(42,44,43,1);
+	overflow: hidden;
+}
+
+#header
+{
+	width: auto;
+	height: 5vh;
+	float: left;
+}
+
+#header h1
+{
+	color: #DC3522;
+	//line-height: 5vh;
+	margin-left: 15px;
+}
+
+#header h1 span
+{
+	font-size: 12pt;
+}
+
+#malwarix_overview
+{
+	float: right;
+	width: 60vw;
+	height: calc(100vh - 15px - 15px);
+	margin-right: 15px;
+	margin-top: 15px;
+	background-image: url('../res/skewed_print.png');
+	border: 1px solid #1E1E20;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#first_use_splash
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../res/binding_dark.png');
+	z-index: 1000;
+}
