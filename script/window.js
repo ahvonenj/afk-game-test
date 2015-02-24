@@ -36,19 +36,17 @@ var virtualwindow =
 			
 			$(this).prepend('<div class = "window_titlebar">\
 							<div class = "window_titlebar_close">X</div>\
-							<div class = "window_titlebar_title">\\\\ ' + $(this).data('title') + '</div>\
+							<div class = "window_titlebar_title">\\\\ ' + 
+							$(this).data('title') + '</div>\
 							</div>')
 			
 			var w = {};
 			
 			$(this).data('vwid', 'vw-' + that.currentId);
-			//$(this).attr('id', 'vw-' + that.currentId);
 			
 			that.currentId++;
 			
 			w.element = $(this);
-			
-			
 			
 			$(this).draggable(
 			{
@@ -147,12 +145,7 @@ var virtualwindow =
 				});
 			});
 		});
-		
-		/*$(document).on('click', '.window_shortcut', function()
-		{
-			$(this).parents('.window').fadeOut();
-		});*/
-		
+
 		for(var i = 0; i < that.windows.length; i++)
 		{
 			console.log($(that.windows[i].element).data('vwid'));
