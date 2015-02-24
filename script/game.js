@@ -29,6 +29,7 @@ var game =
 	
 	update: function()
 	{
+		virtualwindow.update();
 		internet.update();
 	},
 	

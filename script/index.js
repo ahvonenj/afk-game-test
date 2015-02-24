@@ -7,7 +7,7 @@ $(document).ready(function()
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	}
 	
-	virtualwindow.initWindows();
+	virtualwindow.init();
 
 	game.init();
 	internet.init();

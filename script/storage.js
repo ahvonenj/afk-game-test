@@ -2,6 +2,20 @@ var storage =
 {
 	playerData:
 	{
-		playerName: null,
+		name: 'Playerino',
+		rank: 'Newb',
+		
+		bits: 0,
+		money: 0,
+		
+		hardware:
+		{
+			
+		},
+		
+		software:
+		{
+			
+		}
 	}
 };

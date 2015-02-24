@@ -88,13 +88,48 @@
 				
 				<div class = "window" data-title = "Settings"  id = "window_settings">
 					<div class = "window_content">
-						Settings...
+						<h2>New game</h2><br/>
+						<input type = "button" class = "window_button" id = "new_game" value = "New game"/></br></br>
+						
+						<h2>Save & Load</h2><br/>
+						<input type = "button" class = "window_button" id = "save_game" value = "Save game"/>
+						<input type = "button" class = "window_button" id = "load_game" value = "Load game"/></br>
 					</div>
 				</div>
 				
 				<div class = "window" data-title = "Debug"  id = "window_debug">
 					<div class = "window_content">
 						Debug...
+					</div>
+				</div>
+				
+				<div class = "window" data-title = "Help"  id = "window_help">
+					<div class = "window_content">
+						<h2>New game</h2><br/>
+						<p>To start a new game, find the settings window and
+						press the new game button.</p></br>
+						
+						<h2>Saving and loading</h2><br/>
+						<p>Saving and loading the game can also be found from the settings window.
+						Please note that the game has an autosave feature.</p>
+					</div>
+				</div>
+				
+				<div class = "window" data-title = "Profile"  id = "window_profile">
+					<div class = "window_content">
+						<p>Name: <span id = "profile_name">-</span></p>
+						<p>Rank: <span id = "profile_rank">-</span></p>
+						<p>Bits: <span id = "profile_bits">-</span></p>
+						<p>Money: <span id = "profile_money">-</span></p>
+					</div>
+				</div>
+				
+				<div class = "window" data-title = "News"  id = "window_news">
+					<div class = "window_content">
+						<p>[24.2] Added internet</p>
+						<p>[23.2] Added shortcuts</p>
+						<p>[23.2] Added virtual windows</p>
+						<p>[23.2] Init</p>
 					</div>
 				</div>
 				

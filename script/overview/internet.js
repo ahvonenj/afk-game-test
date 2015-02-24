@@ -8,13 +8,13 @@ var internet =
 		y: 0
 	},
 	
-	radius: 50,
+	radius: 35,
 	color: 0x3498db,
 	name: 'Internet',
 	
 	text: new PIXI.Text(this.name,
 	{
-		font: '16pt Tahoma',
+		font: '12pt Tahoma',
 		fill: '#ECF0F1',
 		align: 'center'
 	}),

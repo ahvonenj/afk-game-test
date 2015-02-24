@@ -2,10 +2,12 @@ var virtualwindow =
 {
 	currentId: 0,
 	windows: [],
+	shortcutCount: 0,
+	
 	windowPadding: 
 	{
-		x: 150,
-		y: 300
+		x: 75,
+		y: 75
 	},
 	shortcutPadding: 
 	{
@@ -14,7 +16,7 @@ var virtualwindow =
 	},
 	windowPaddingIncrement: 
 	{
-		x: 50,
+		x: 35,
 		y: 50
 	},
 	shortcutPaddingIncrement: 
@@ -23,7 +25,7 @@ var virtualwindow =
 		y: 0
 	},
 	
-	initWindows: function()
+	init: function()
 	{
 		var that = this;
 		
@@ -75,13 +77,21 @@ var virtualwindow =
 			
 			var shortcutText = $(this).data('title').substr(0, 2).capitaliseFirstLetter();
 			var shortcutColor = tinycolor.random().toHexString();
-							
+			
+			if(that.shortcutCount % 6 == 0 && that.shortcutCount != 0)
+			{
+				that.shortcutPadding.y += 90;
+				that.shortcutPadding.x = 100;		
+			}
+			
 			$('#window_shortcuts').append('<div class = "window_shortcut"\
 							style = "background-color: ' + shortcutColor + '; \
 							top: ' + that.shortcutPadding.y + 'px; \
 							left: ' + that.shortcutPadding.x + 'px;"\
 							data-linkedto = "' + $(this).attr('id') + '">'
 							+ shortcutText + '</div>');
+			
+			that.shortcutCount++;
 		
 			if(typeof $(this).data('specialcase') != 'undefined' || $(this).data('specialcase') == true)
 			{
@@ -150,5 +160,17 @@ var virtualwindow =
 		{
 			console.log($(that.windows[i].element).data('vwid'));
 		}
+	},
+	
+	update: function()
+	{
+		$('#profile_name').text(storage.playerData.name);
+		$('#profile_rank').text(storage.playerData.rank);
+		//$('#profile_bits').text(storage.playerData.bits.toFixed(0) + ' \u0243');
+		$('#profile_bits').text(storage.playerData.bits.toFixed(0) + ' \u2202');
+		$('#profile_money').text(storage.playerData.money.toFixed(0) + ' $');
+		
+		storage.playerData.bits += 0.123;
+		storage.playerData.money += 0.245;
 	}
 };
