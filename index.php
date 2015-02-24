@@ -46,6 +46,8 @@
 		<script src="script/overview/internet.js"></script>
 		
 		<script src="script/game.js"></script>
+		
+		<script src="script/events.js"></script>
 		<script src="script/index.js"></script>		
 	</head>
 	<body>
@@ -92,8 +94,13 @@
 						<input type = "button" class = "window_button" id = "new_game" value = "New game"/></br></br>
 						
 						<h2>Save & Load</h2><br/>
+						<input type = "textbox" class = "window_text" id = "saveload_name" placeholder = "File name" /><br/>
 						<input type = "button" class = "window_button" id = "save_game" value = "Save game"/>
-						<input type = "button" class = "window_button" id = "load_game" value = "Load game"/></br>
+						<input type = "button" class = "window_button" id = "load_game" value = "Load game"/></br></br>
+						
+						<h2>Graphics</h2><br/>
+						<input type = "button" class = "window_button" id = "graphics_low" value = "Low"/>
+						<input type = "button" class = "window_button" id = "graphics_high" value = "High"/>
 					</div>
 				</div>
 				

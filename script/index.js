@@ -7,6 +7,8 @@ $(document).ready(function()
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	}
 	
+	events.bindEvents();
+	
 	virtualwindow.init();
 
 	game.init();

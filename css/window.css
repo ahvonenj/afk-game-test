@@ -128,6 +128,14 @@
 	text-decoration: none;
 }
 
+.window_text
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 /* WINDOW SPECIFIC OVERRIDES */
 
 #window_overview
@@ -140,4 +148,10 @@
 #window_overview .window_content
 {
 	overflow-y: hidden;
+}
+
+#saveload_name
+{
+	margin-bottom: 10px;
+	width: 204px;
 }
