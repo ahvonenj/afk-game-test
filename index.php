@@ -88,6 +88,12 @@
 					</div>
 				</div>
 				
+				<div class = "window" data-title = "Debug"  id = "window_debug">
+					<div class = "window_content">
+						Debug...
+					</div>
+				</div>
+				
 				<div class = "window" data-title = "Overview" data-specialcase = "1" id = "window_overview">
 					<div class = "window_content">
 						The game...
