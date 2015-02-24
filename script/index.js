@@ -13,6 +13,8 @@ $(document).ready(function()
 
 	game.init();
 	internet.init();
-	
+		
+	server.listServers();	
+		
 	requestAnimFrame(game.animate);
 });

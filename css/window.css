@@ -155,3 +155,38 @@
 	margin-bottom: 10px;
 	width: 204px;
 }
+
+#server_list
+{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+#server_list .servername
+{
+	padding-top: 10px;
+	font-size: 14pt;
+}
+
+#server_list .serverdesc
+{
+	font-style: italic;
+}
+
+#server_list .servercost
+{
+
+}
+
+#server_list .serverlast
+{
+	border-bottom: 1px solid #ecf0f1;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.server_sell_button
+{
+	margin-left: 10px;
+}

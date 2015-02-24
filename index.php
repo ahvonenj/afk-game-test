@@ -39,6 +39,7 @@
 		<script src="script/lib/tinycolor.js"></script>
 		<script src="script/lib/pixi.js"></script>
 		
+		<script src="script/globals.js"></script>
 		<script src="script/utility.js"></script>
 		<script src="script/storage.js"></script>
 		<script src="script/window.js"></script>
@@ -47,6 +48,7 @@
 		
 		<script src="script/game/software.js"></script>
 		<script src="script/game/hardware.js"></script>
+		<script src="script/game/server.js"></script>
 		
 		<script src="script/game.js"></script>
 		
@@ -82,6 +84,14 @@
 				<div class = "window" data-title = "Software" id = "window_software">
 					<div class = "window_content">
 						Software...
+					</div>
+				</div>
+				
+				<div class = "window" data-title = "Server" id = "window_server">
+					<div class = "window_content">
+						<table id = "server_list">
+						
+						</table>
 					</div>
 				</div>
 				

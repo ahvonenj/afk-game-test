@@ -169,8 +169,8 @@ var virtualwindow =
 		$('#profile_name').text(storage.playerData.name);
 		$('#profile_rank').text(storage.playerData.rank);
 		//$('#profile_bits').text(storage.playerData.bits.toFixed(0) + ' \u0243');
-		$('#profile_bits').text(storage.playerData.bits.toFixed(0) + ' \u2202');
-		$('#profile_money').text(storage.playerData.money.toFixed(0) + ' $');
+		$('#profile_bits').text(storage.playerData.bits.toFixed(0) + ' ' + globals.bitIndicator);
+		$('#profile_money').text(storage.playerData.money.toFixed(0) + ' ' + globals.moneyIndicator);
 		
 		storage.playerData.bits += 0.123;
 		storage.playerData.money += 0.245;

@@ -1,4 +1,7 @@
 var hardware =
 {
-	
+	list:
+	{
+		
+	}
 };
