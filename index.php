@@ -37,10 +37,14 @@
 		<script src="script/lib/jquery.transit.min.js"></script>	
 		<script src="script/lib/chance.min.js"></script>
 		<script src="script/lib/tinycolor.js"></script>
+		<script src="script/lib/pixi.js"></script>
 		
 		<script src="script/utility.js"></script>
 		<script src="script/storage.js"></script>
 		<script src="script/window.js"></script>
+		
+		<script src="script/overview/internet.js"></script>
+		
 		<script src="script/game.js"></script>
 		<script src="script/index.js"></script>		
 	</head>
@@ -96,7 +100,7 @@
 				
 				<div class = "window" data-title = "Overview" data-specialcase = "1" id = "window_overview">
 					<div class = "window_content">
-						The game...
+					
 					</div>
 				</div>
 				

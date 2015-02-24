@@ -120,3 +120,9 @@
 	width: 1050px;
 	height: 95%;
 }
+
+
+#window_overview .window_content
+{
+	overflow-y: hidden;
+}
