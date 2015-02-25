@@ -21,7 +21,7 @@ var virtualwindow =
 	},
 	shortcutPaddingIncrement: 
 	{
-		x: 95,
+		x: 85,
 		y: 0
 	},
 	
@@ -82,7 +82,7 @@ var virtualwindow =
 			
 			if(that.shortcutCount % 6 == 0 && that.shortcutCount != 0)
 			{
-				that.shortcutPadding.y += 100;
+				that.shortcutPadding.y += 90;
 				that.shortcutPadding.x = 100;		
 			}
 			
@@ -90,8 +90,8 @@ var virtualwindow =
 							style = "background-color: ' + shortcutColor + '; \
 							top: ' + that.shortcutPadding.y + 'px; \
 							left: ' + that.shortcutPadding.x + 'px;"\
-							data-linkedto = "' + $(this).attr('id') + '">'
-							+ shortcutText + '</div>');
+							data-linkedto = "' + $(this).attr('id') + '"><p>'
+							+ shortcutText + '</p></div>');
 			
 			that.shortcutCount++;
 		
@@ -133,29 +133,52 @@ var virtualwindow =
 		
 		$(document).on('click', '.window_shortcut', function()
 		{
-			console.log($(this).data('linkedto'));
-			$('#' + $(this).data('linkedto')).fadeIn();
-			
-			var x = ($(this).width() / 2);
-			var y = ($(this).height() / 2);
-			
-			$(this).css(
+			if(typeof $(this).data('linkedto') != 'undefined')
 			{
-				transformOrigin: x + 'px ' + y + 'px'
-			});
-			
-			$(this).transition(
-			{
-				scale: 0.95,
-				duration: 50
-			}, function()
-			{
+				$('#' + $(this).data('linkedto')).fadeIn();
+				
+				var x = ($(this).width() / 2);
+				var y = ($(this).height() / 2);
+				
+				$(this).css(
+				{
+					transformOrigin: x + 'px ' + y + 'px'
+				});
+				
 				$(this).transition(
 				{
-					scale: 1,
+					scale: 0.95,
 					duration: 50
+				}, function()
+				{
+					$(this).transition(
+					{
+						scale: 1,
+						duration: 50
+					});
 				});
-			});
+			}
+			else
+			{
+				if(typeof $(this).data('action') != 'undefined')
+				{
+					switch($(this).data('action'))
+					{
+						case 'closeall':
+							$('.window').not('#window_overview').each(function()
+							{
+								$(this).fadeOut();
+							});
+							break;
+						default:
+							break;
+					}
+				}
+				else
+				{
+					console.log("No link or action specified!");
+				}
+			}
 		});
 
 		for(var i = 0; i < that.windows.length; i++)

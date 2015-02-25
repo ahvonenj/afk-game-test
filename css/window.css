@@ -86,14 +86,14 @@
 .window_shortcut
 {
 	position: absolute;
-	top: 100px;
-	left: 100px;
-	width: 85px;
-	height: 90px;
+	/*top: 100px;
+	left: 100px;*/
+	width: 70px;
+	height: 75px;
 	background-color: #D9CB9E;
 	color: white;
 	text-align: center;
-	line-height: 90px;
+	/*line-height: 90px;*/
 	font-size: 12pt;
 	font-weight: bold;
 	-webkit-border-radius: 5px;
@@ -115,6 +115,16 @@
     user-select: none;
 	
 	border: 1px solid #ecf0f1;
+	
+	display: table;
+}
+
+.window_shortcut p
+{
+	display: table-cell;
+	vertical-align: middle;
+	word-break: break-all;
+	
 }
 
 .window_button

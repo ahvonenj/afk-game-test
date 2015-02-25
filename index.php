@@ -67,7 +67,9 @@
 			</div>
 			
 			<div id = "window_shortcuts">
-				
+				<div class = "window_shortcut" style = "background-color: #2c3e50; bottom: 15px; left: 15px;" data-action = "closeall">
+					<p>Close all</p>
+				</div>
 			</div>
 			
 			<!--<div id = "malwarix_overview">
@@ -96,7 +98,7 @@
 					</div>
 				</div>
 				
-				<div class = "window" data-title = "Server info"  id = "window_serverinfo">
+				<div class = "window" data-title = "Serverinfo"  id = "window_serverinfo">
 					<div class = "window_content">
 						<table id = "server_information">
 							<tr><td>No server selected</td></tr>
