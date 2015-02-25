@@ -45,6 +45,7 @@
 		<script src="script/window.js"></script>
 		
 		<script src="script/overview/internet.js"></script>
+		<script src="script/overview/gameserver.js"></script>
 		
 		<script src="script/game/software.js"></script>
 		<script src="script/game/hardware.js"></script>
@@ -91,6 +92,14 @@
 					<div class = "window_content">
 						<table id = "server_list">
 						
+						</table>
+					</div>
+				</div>
+				
+				<div class = "window" data-title = "Server info"  id = "window_serverinfo">
+					<div class = "window_content">
+						<table id = "server_information">
+							<tr><td>No server selected</td></tr>
 						</table>
 					</div>
 				</div>
@@ -153,6 +162,7 @@
 				
 				<div class = "window" data-title = "News"  id = "window_news">
 					<div class = "window_content">
+						<p>[25.2] Added server listing</p>
 						<p>[24.2] Added internet</p>
 						<p>[23.2] Added shortcuts</p>
 						<p>[23.2] Added virtual windows</p>

@@ -37,9 +37,13 @@
 {
 	float: left;
 	height: 35px;
-	width: auto;
+	width: calc(100% - 41px);
 	margin-left: 5px;
 	line-height: 35px;
+	overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .window_titlebar_minimize

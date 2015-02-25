@@ -16,6 +16,11 @@ var storage =
 		software:
 		{
 			
-		}
+		},
+		
+		server:
+		[
+			
+		]
 	}
 };

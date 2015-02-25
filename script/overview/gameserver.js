@@ -1,4 +1,4 @@
-var internet = 
+var gameserver =
 {
 	graphics: new PIXI.Graphics(),
 	
@@ -8,9 +8,9 @@ var internet =
 		y: 0
 	},
 	
-	radius: 35,
-	color: 0x3498db,
-	name: 'Internet',
+	radius: 25,
+	color: 0xd35400,
+	name: '',
 	
 	text: new PIXI.Text(this.name,
 	{
@@ -23,8 +23,8 @@ var internet =
 	{
 		game.stage.addChild(this.graphics);
 		game.stage.addChild(this.text);
-		this.position.x = game.renderer.width / 2;
-		this.position.y = game.renderer.height / 2;
+		this.position.x = chance.integer({ min: 25, max: game.renderer.width - 25 });
+		this.position.y = chance.integer({ min: 25, max: game.renderer.height - 25 });
 		
 	},
 	
@@ -39,16 +39,15 @@ var internet =
 		this.text.setText(this.name);
 		this.text.x = this.position.x - this.text.width / 2;
 		this.text.y = this.position.y - this.text.height / 2;
-
 	},
 	
-	//c: 0,
+	c: 0,
 	
 	update: function()
 	{
-		//this.position.x = 300 + Math.sin(this.c * 0.2) * 100;
-		//this.position.y = 300 + Math.cos(this.c * 0.2) * 100;
+		this.position.x = 300 + Math.sin(this.c * 0.2) * 100;
+		this.position.y = 300 + Math.cos(this.c * 0.2) * 100;
 		
-		//this.c += 0.1;
+		this.c += 0.1;
 	}
 };
